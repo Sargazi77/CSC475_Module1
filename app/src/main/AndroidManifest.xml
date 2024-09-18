@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.myapplication">
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.MyApplication">
+
+        <!-- Declaring the MainActivity as the first screen to launch when the app starts -->
+        <activity android:name=".MainActivity"
+                  android:exported="true">
+            <intent-filter>
+                <!-- This means that this activity will be the main one -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- This category makes it appear in the app launcher -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
